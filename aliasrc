@@ -1,5 +1,12 @@
 #!/bin/sh
 
+#############################
+#Shell aliases              #
+#Maintainer Christopher Chan#
+#Version: 0.2.0             #
+#Date: 2023-04-28           #
+#############################
+
 # Use neovim for vim if present.
 [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
 
@@ -24,8 +31,7 @@ alias \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner" \
     nv="nvim" \
-    ls="exa -l"\
-    rm="trash"
+    ls="exa -l --git"
 
 # Colorize commands when possible.
 alias \
@@ -50,7 +56,7 @@ alias \
 	z="zathura"
 
 alias \
-	lf="lfub" \
+	lf="lf" \
 	magit="nvim -c MagitOnly" \
 	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
 	weath="less -S ${XDG_CACHE_HOME:-$HOME/.cache}/weatherreport" \
