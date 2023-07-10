@@ -30,8 +30,8 @@ alias \
 	yt="yt-dlp --embed-metadata -i" \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner" \
-    nv="nvim" \
-    ls="exa -l --git"
+	nv="nvim" \
+	ls="exa -l"
 
 # Colorize commands when possible.
 alias \
