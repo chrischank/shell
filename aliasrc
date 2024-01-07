@@ -3,8 +3,8 @@
 #############################
 #Shell aliases              #
 #Maintainer Christopher Chan#
-#Version: 0.2.0             #
-#Date: 2023-04-28           #
+#Version: 0.2.1             #
+#Date: 2024-01-07           #
 #############################
 
 # Use neovim for vim if present.
@@ -60,3 +60,4 @@ alias \
 	magit="nvim -c MagitOnly" \
 	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
 	weath="less -S ${XDG_CACHE_HOME:-$HOME/.cache}/weatherreport" \
+    alias git='LANG=en_GB git'
