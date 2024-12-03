@@ -31,7 +31,7 @@ alias \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner" \
 	nv="nvim" \
-	ls="eza -l"
+	ls="eza -l -a -B --git --time-style=iso -t=modified"
 
 # Colorize commands when possible.
 alias \
