@@ -31,8 +31,8 @@ alias \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner" \
 	nv="nvim" \
-	ls="eza -l -a -B --git --time-style=iso -t=modified"\
-    bat="batcat"
+	ls="eza -l -a -B --git --time-style=iso -t=modified"
+#    bat="batcat"
 
 # Colorize commands when possible.
 alias \
@@ -57,7 +57,7 @@ alias \
 	z="zathura"
 
 alias \
-	lf="lf" \
+	lf="lfub" \
 	magit="nvim -c MagitOnly" \
 	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
 	weath="less -S ${XDG_CACHE_HOME:-$HOME/.cache}/weatherreport" \
