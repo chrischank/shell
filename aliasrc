@@ -3,8 +3,8 @@
 #############################
 #Shell aliases              #
 #Maintainer Christopher Chan#
-#Version: 0.2.2             #
-#Date: 2024-02-07           #
+#Version: 0.2.3             #
+#Date: 2025-02-23           #
 #############################
 
 # Use neovim for vim if present.
@@ -31,7 +31,8 @@ alias \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner" \
 	nv="nvim" \
-	ls="eza -l -a -B --git --time-style=iso -t=modified"
+	ls="eza -l -a -B --git --time-style=iso -t=modified"\
+    glog="git log --graph --decorate"
 #    bat="batcat"
 
 # Colorize commands when possible.
