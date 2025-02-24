@@ -32,7 +32,7 @@ alias \
 	ffmpeg="ffmpeg -hide_banner" \
 	nv="nvim" \
 	ls="eza -l -a -B --git --time-style=iso -t=modified"\
-    glog="git log --graph --decorate"
+    glog="git log --oneline --graph --decorate"
 #    bat="batcat"
 
 # Colorize commands when possible.
