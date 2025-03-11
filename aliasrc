@@ -3,8 +3,8 @@
 #############################
 #Shell aliases              #
 #Maintainer Christopher Chan#
-#Version: 0.2.3             #
-#Date: 2025-02-23           #
+#Version: 0.2.4             #
+#Date: 2025-03-11           #
 #############################
 
 # Use neovim for vim if present.
@@ -24,16 +24,17 @@ se() { cd ~/.local/bin; $EDITOR $(fzf) ;}
 alias \
 	cp="cp -iv" \
 	mv="mv -iv" \
-	rm="rm -vI" \
+	rm="rm -iv" \
 	bc="bc -ql" \
 	mkd="mkdir -pv" \
 	yt="yt-dlp --embed-metadata -i" \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner" \
 	nv="nvim" \
-	ls="eza -l -a -B --git --time-style=iso -t=modified"\
+    ls="lsd -Alhg1 --date +%Y-%m-%d:%X"\
     glog="git log --oneline --graph --decorate"
-#    bat="batcat"
+    #bat="batcat"
+	#ls="eza -l -a -B --git --time-style=iso -t=modified"\
 
 # Colorize commands when possible.
 alias \
