@@ -25,6 +25,8 @@ alias \
 	cp="cp -iv" \
 	mv="mv -iv" \
 	rm="rm -iv" \
+    du="dust -d 1"\
+    df="duf"\
 	bc="bc -ql" \
 	mkd="mkdir -pv" \
 	yt="yt-dlp --embed-metadata -i" \
