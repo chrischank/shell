@@ -22,21 +22,21 @@ se() { cd ~/.local/bin; $EDITOR $(fzf) ;}
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
-	cp="cp -iv" \
-	mv="mv -iv" \
-	rm="rm -iv" \
+    cp="cp -iv" \
+    mv="mv -iv" \
+    rm="rm -iv" \
     du="dust -d 1"\
     df="duf"\
-	bc="bc -ql" \
-	mkd="mkdir -pv" \
-	yt="yt-dlp --embed-metadata -i" \
-	yta="yt -x -f bestaudio/best" \
-	ffmpeg="ffmpeg -hide_banner" \
-	nv="nvim" \
+    bc="bc -ql" \
+    mkd="mkdir -pv" \
+    yt="yt-dlp --embed-metadata -i" \
+    yta="yt -x -f bestaudio/best" \
+    ffmpeg="ffmpeg -hide_banner" \
+    nv="nvim" \
     ls="lsd -Alhg1 --date +%Y-%m-%d:%X"\
     glog="git log --oneline --graph --decorate"
     #bat="batcat"
-	#ls="eza -l -a -B --git --time-style=iso -t=modified"\
+    #ls="eza -l -a -B --git --time-style=iso -t=modified"\
 
 # Colorize commands when possible.
 alias \
