@@ -3,8 +3,8 @@
 #############################
 #Shell aliases              #
 #Maintainer Christopher Chan#
-#Version: 0.2.4             #
-#Date: 2025-03-11           #
+#Version: 0.2.5             #
+#Date: 2026-03-14           #
 #############################
 
 # Use neovim for vim if present.
@@ -25,18 +25,29 @@ alias \
 	cp="cp -iv" \
 	mv="mv -iv" \
 	rm="rm -iv" \
-    du="dust -d 1"\
-    df="duf"\
+	du="dust -d 1" \
+	df="duf" \
 	bc="bc -ql" \
 	mkd="mkdir -pv" \
 	yt="yt-dlp --embed-metadata -i" \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner" \
 	nv="nvim" \
-    ls="lsd -Alhg1 --date +%Y-%m-%d:%X"\
-    glog="git log --oneline --graph --decorate"
-    #bat="batcat"
-	#ls="eza -l -a -B --git --time-style=iso -t=modified"\
+	ls="lsd -Alhg1 --date +%Y-%m-%d:%X"
+
+# Git aliases
+alias \
+	glog="git log --oneline --graph --decorate" \
+	gsta="git status" \
+	gbr="git branch -a -vv" \
+	gco="git checkout" \
+	gwt="git worktree" \
+	git="LANG=en_GB git"
+
+# Git worktree helpers (functions to accept arguments)
+# Creates/removes worktrees at ../{repo}--{branch}
+gwtadd() { git worktree add "../$(basename "$(git rev-parse --show-toplevel)")--$1" "$1" ; }
+gwtrm()  { git worktree remove "../$(basename "$(git rev-parse --show-toplevel)")--$1" ; }
 
 # Colorize commands when possible.
 alias \
@@ -60,9 +71,9 @@ alias \
 	xq="xbps-query" \
 	z="zathura"
 
+# Misc
 alias \
-    yz="yazi"\
+	yz="yazi" \
 	magit="nvim -c MagitOnly" \
 	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
-	weath="less -S ${XDG_CACHE_HOME:-$HOME/.cache}/weatherreport" \
-    alias git='LANG=en_GB git'
+	weath="less -S ${XDG_CACHE_HOME:-$HOME/.cache}/weatherreport"
