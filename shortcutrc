@@ -2,7 +2,7 @@
 alias cac="cd /home/chris/.cache && ls -a" \
 cf="cd /home/chris/.config && ls -a" \
 D="cd /home/chris/Downloads && ls -a" \
-d="cd /home/chris/Documents && ls -a" \
+doc="cd /home/chris/Documents && ls -a" \
 dt="cd /home/chris/.local/share && ls -a" \
 rr="cd /home/chris/.local/src && ls -a" \
 h="cd /home/chris && ls -a" \
