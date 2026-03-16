@@ -46,8 +46,8 @@ alias \
 
 # Git worktree helpers (functions to accept arguments)
 # Creates/removes worktrees at ../{repo}--{branch}
-gwtadd() { git worktree add "../$(basename "$(git rev-parse --show-toplevel)")--${1//\//_}" "$1" ; }
-gwtrm()  { git worktree remove "../$(basename "$(git rev-parse --show-toplevel)")--${1//\//_}" ; }
+gwtadd() { git worktree add "../$(basename "$(git rev-parse --show-toplevel)")<-${1//\//_}" "$1" ; }
+gwtrm()  { git worktree remove "../$(basename "$(git rev-parse --show-toplevel)")<-${1//\//_}" ; }
 
 # Docker aliases
 alias \
