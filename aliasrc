@@ -51,8 +51,8 @@ gwtrm()  { git worktree remove "../$(basename "$(git rev-parse --show-toplevel)"
 
 # Docker aliases
 alias \
-	d = "docker" \
-	dc = "docker-compose"
+	d="docker" \
+	dc="docker compose"
 
 # Colorize commands when possible.
 alias \
