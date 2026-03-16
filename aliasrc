@@ -3,8 +3,8 @@
 #############################
 #Shell aliases              #
 #Maintainer Christopher Chan#
-#Version: 0.2.5             #
-#Date: 2026-03-14           #
+#Version: 0.2.6             #
+#Date: 2026-03-16           #
 #############################
 
 # Use neovim for vim if present.
@@ -18,7 +18,7 @@ for command in mount umount sv pacman updatedb su shutdown poweroff reboot ; do
 	alias $command="sudo $command"
 done; unset command
 
-se() { cd ~/.local/bin; $EDITOR $(fzf) ;}
+se() { (cd ~/.local/bin && $EDITOR $(fzf)) ;}
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
@@ -46,8 +46,13 @@ alias \
 
 # Git worktree helpers (functions to accept arguments)
 # Creates/removes worktrees at ../{repo}--{branch}
-gwtadd() { git worktree add "../$(basename "$(git rev-parse --show-toplevel)")--$1" "$1" ; }
-gwtrm()  { git worktree remove "../$(basename "$(git rev-parse --show-toplevel)")--$1" ; }
+gwtadd() { git worktree add "../$(basename "$(git rev-parse --show-toplevel)")--${1//\//_}" "$1" ; }
+gwtrm()  { git worktree remove "../$(basename "$(git rev-parse --show-toplevel)")--${1//\//_}" ; }
+
+# Docker aliases
+alias \
+	d = "docker" \
+	dc = "docker-compose"
 
 # Colorize commands when possible.
 alias \
